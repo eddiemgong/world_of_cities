@@ -1,0 +1,17 @@
+// MySQL
+
+CREATE DATABASE IF NOT EXISTS secoms3190;
+USE secoms3190;
+
+CREATE TABLE IF NOT EXISTS cities (city VARCHAR(255), city_ascii VARCHAR(255), lat DECIMAL(9, 6), lng DECIMAL(9, 6), country VARCHAR(255), iso2 CHAR(2), iso3 CHAR(3), admin_name VARCHAR(255), capital VARCHAR(50), population INT, image VARCHAR(255), about TEXT);
+
+INSERT INTO cities (city, city_ascii, lat, lng, country, iso2, iso3, admin_name, capital, population, image, about)
+VALUES
+('Naha', 'Naha', 26.2124, 127.6792, 'Japan', 'JP', 'JPN', 'Okinawa', 'admin', 315954, '/images/naha.jpeg', 'Okinawa is a Japanese prefecture comprising more than 150 islands in the East China Sea between Taiwan and Japan\'s mainland. It\'s known for its tropical climate, broad beaches and coral reefs, as well as World War II sites.'),
+('Perth', 'Perth', -31.9505, 115.8605, 'Australia', 'AU', 'AUS', 'Western Australia', 'admin', 2309338, '/images/perth.jpeg', 'Perth, capital of Western Australia, sits where the Swan River meets the southwest coast. Sandy beaches line its suburbs, and the huge, riverside Kings Park and Botanic Garden on Mount Eliza offer sweeping views of the city.'),
+('Florence', 'Florence', 43.7696, 11.2558, 'Italy', 'IT', 'ITA', 'Tuscany', 'admin', 382258, '/images/florence.jpeg', 'Florence, capital of Italy’s Tuscany region, is home to many masterpieces of Renaissance art and architecture. One of its most iconic sights is the Duomo, a cathedral with a terracotta-tiled dome and a bell tower.'),
+('Rabat', 'Rabat', 34.0209, -6.8416, 'Morocco', 'MA', 'MAR', 'Rabat-Salé-Kénitra', 'primary', 1989208, '/images/rabat.jpeg', 'Rabat, Morocco\'s capital, rests along the shores of the Bouregreg River and the Atlantic Ocean. It\'s known for landmarks that speak to its Islamic and French-colonial heritage, including the Kasbah of the Udayas.'),
+('Ames', 'Ames', 42.0347, -93.6204, 'United States', 'US', 'USA', 'Iowa', 'minor', 66127, '/images/ames.jpeg', 'Ames is a city in Story County, Iowa, United States, located approximately 30 miles north of Des Moines in central Iowa. It is best known as the home of Iowa State University.'),
+('Lima', 'Lima', -12.0464, -77.0428, 'Peru', 'PE', 'PER', 'Lima', 'primary', 9674755, '/images/lima.jpeg', 'Lima, the capital of Peru, lies on the country\'s arid Pacific coast. Though its colonial center is preserved, it\'s a bustling metropolis and one of South America’s largest cities.'),
+('Beirut', 'Beirut', 33.8886, 35.4955, 'Lebanon', 'LB', 'LBN', 'Beirut', 'primary', 2402481, '/images/beirut.jpeg', 'Beirut is the capital and largest city of Lebanon. As of 2014, Greater Beirut has a population of 2.5 million, just under half of Lebanon\'s population, which makes it the fourth-largest city in the Levant region and the sixteenth-largest in the Arab world.'),
+('Mariupol', 'Mariupol', 47.0979, 37.5437, 'Ukraine', 'UA', 'UKR', 'Donetsk Oblast', 'admin', 422286, '/images/mariupol.jpeg', 'Mariupol is a city in Donetsk Oblast, Ukraine. It is situated on the northern coast of the Sea of Azov, at the mouth of the Kalmius River.');
